@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invoice Pedia</title>
-    <!-- font awesome cdn link -->
+    <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- external css link -->
     <link rel="stylesheet" href="./sass/style.css">
@@ -13,9 +13,145 @@
 <body>
     <div class="container">
         <header>
-            
+            <ul>
+                <li class="nav__hide__show--btn"><i class="fa-solid fa-bars"></i></li>
+                <li><a href="#">Log Out</a></li>
+            </ul>
         </header>
-        <nav></nav>
+        <nav>
+            <div class="logo">
+                <!-- <img src="./assets/logo/logo-final-28.03.2021-transparent.gif" alt=""> -->
+                <h3>Marvel Computer & Service Center</h3>
+            </div>
+            <ul class="nav__list">
+                <a href="">
+                    <li class="nav__list--items">
+                        <i class="fa-solid fa-gauge icons"></i>
+                        <div class="nav__list--item--text--container">
+                            <div class="nav__list--items--text">Home</div>
+                            <div class="nav__list--items--subtext">Dashboard & Shortcuts</div>
+                        </div>
+                    </li>
+                </a>
+                <!-- sales and payments -->
+                <li id="navLi" class="nav__list--items">
+                    <i class="fa-solid fa-file-invoice icons"></i>
+                    <div class="nav__list--item--text--container">
+                        <div class="nav__list--items--text">Invoices</div>
+                        <div class="nav__list--items--subtext">Sales & Payments</div>
+                    </div>
+                </li>
+                <!-- sub menu -->
+                <ul class="sub__menu">
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">new invoices</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">manage invoices</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">receive payment</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">products</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">print barcode</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">categories</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">brands</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">sales rep. (SR)</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">customers</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">sales return</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">add stock</a></li>
+                </ul>
+                <!-- purchase and pay -->
+                <li id="navLi" class="nav__list--items">
+                    <i class="fa-solid fa-money-bills icons"></i>
+                    <div class="nav__list--item--text--container">
+                        <div class="nav__list--items--text">bill</div>
+                        <div class="nav__list--items--subtext">purchase & Pay</div>
+                    </div>
+                </li>
+                <!-- sub menu -->
+                <ul class="sub__menu">
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">new bill or purchase</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">manage bills</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">demand order</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">manage demand order</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">pay bill</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">products</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">categories</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">brands</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">vandors</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">vandor advance</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">new purchase return</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">purchase return</a></li>
+                </ul>
+                <!-- accounting finance and audit -->
+                <li id="navLi" class="nav__list--items">
+                    <i class="fa-solid fa-calculator icons"></i>
+                    <div class="nav__list--item--text--container">
+                        <div class="nav__list--items--text">accounting</div>
+                        <div class="nav__list--items--subtext">finance & audit</div>
+                    </div>
+                </li>
+                <!-- sub menu -->
+                <ul class="sub__menu">
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">accounts</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">chart of accounts</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">payment voucher</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">receive voucher</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">journal voucher</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">categories</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">brands</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">sales rep. (SR)</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">customers</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">sales return</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">add stock</a></li>
+                </ul>
+                <!-- print send save reports -->
+                <li id="navLi" class="nav__list--items">
+                    <i class="fa-solid fa-file-lines icons"></i>
+                    <div class="nav__list--item--text--container">
+                        <div class="nav__list--items--text">reports</div>
+                        <div class="nav__list--items--subtext">print, send, save reports</div>
+                    </div>
+                </li>
+                <!-- sub menu -->
+                <ul class="sub__menu">
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">new invoices</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">manage invoices</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">receive payment</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">products</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">print barcode</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">categories</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">brands</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">sales rep. (SR)</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">customers</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">sales return</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">add stock</a></li>
+                </ul>
+                <!-- customization and personalization -->
+                <li id="navLi" class="nav__list--items">
+                    <i class="fa-solid fa-gear icons"></i>
+                    <div class="nav__list--item--text--container">
+                        <div class="nav__list--items--text">settings</div>
+                        <div class="nav__list--items--subtext">customization & personalization</div>
+                    </div>
+                </li>
+                <!-- sub menu -->
+                <ul class="sub__menu">
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">new invoices</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">manage invoices</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">receive payment</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">products</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">print barcode</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">categories</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">brands</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">sales rep. (SR)</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">customers</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">sales return</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">add stock</a></li>
+                </ul>
+            </ul>
+        </nav>
     </div>
+    <!-- font-awesome js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery file -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <!-- external js -->
+    <script src="./js/script.js"></script>
 </body>
 </html>
