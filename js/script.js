@@ -4,6 +4,7 @@ let navLi = document.querySelectorAll("#navLi");
 let header = document.querySelector("#header");
 let nav = document.querySelector("#nav");
 let navToggleBtn = document.querySelector("#navToggleBtn");
+let mainContent = document.querySelector("#main");
 
 navLi.forEach(function(list){
     list.addEventListener('click', function (e) {
@@ -12,10 +13,12 @@ navLi.forEach(function(list){
             e.currentTarget.nextElementSibling.classList.add("active__sub--ul");
             header.classList.remove("deactive__nav");
             nav.classList.remove("deactive__nav");
+            mainContent.classList.remove("deactive__nav");
         } else {
             e.currentTarget.nextElementSibling.classList.remove("active__sub--ul");
             header.classList.remove("deactive__nav");
-            nav.classList.remove("deactive__nav");           
+            nav.classList.remove("deactive__nav"); 
+            mainContent.classList.remove("deactive__nav");          
         }
     })
 });
@@ -31,5 +34,6 @@ function resetActiveSubUl() {
 navToggleBtn.addEventListener('click', function (e) {
     header.classList.toggle("deactive__nav");
     nav.classList.toggle("deactive__nav");
+    mainContent.classList.toggle("deactive__nav");
     resetActiveSubUl();
 })

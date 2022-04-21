@@ -8,7 +8,7 @@
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- external css link -->
-    <link rel="stylesheet" href="./sass/style.css">
+    <link rel="stylesheet" href="../sass/style.css">
 </head>
 <body>
     <div class="container">
@@ -43,7 +43,7 @@
                 </li>
                 <!-- sub menu -->
                 <ul class="sub__menu">
-                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="./invoice/new_invoice.html">new invoices</a></li>
+                    <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">new invoices</a></li>
                     <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">manage invoices</a></li>
                     <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">receive payment</a></li>
                     <li class="sub__menu--list"><i class="fa-solid fa-minus minus"></i><a href="#">products</a></li>
@@ -153,12 +153,71 @@
             </ul>
         </nav>
         <!-- main content -->
+        <main id="main" class="main">
+            <div class="form__container">
+                <!-- heading -->
+                <div class="main__content__heading">
+                    <h3>Create an Invoice</h3>
+                    <button>show all invoices</button>
+                </div>
+                <form id="newInvoice" class="new__invoice" action="" method="post">
+                    <div class="invoice__head__information">
+                        <div class="form__group">
+                            <label for="invoiceNumber">Invoice Number *</label>
+                            <input type="text" name="invoiceNumber" id="invoiceNumber" placeholder="" value="">
+                        </div>
+                        <div class="form__group">
+                            <label for="invoiceDate">Invoice Date *</label>
+                            <input type="text" name="invoiceNumber" id="invoiceNumber" placeholder="" value="">
+                        </div>
+                        <div class="form__group">
+                            <label for="toCustomer">To Customer</label>
+                            <input type="text" name="invoiceNumber" id="invoiceNumber" placeholder="" value="">
+                        </div>
+                        <div class="form__group">
+                            <label for="shippingDate">shipping date</label>
+                            <input type="text" name="invoiceNumber" id="invoiceNumber" placeholder="" value="">
+                        </div>
+                    </div>
+                    <div class="invoice__item__information">
+                        <table class="invoice__table">
+                            <tr>
+                                <th>sr no.</th>
+                                <th>item name</th>
+                                <th>stock</th>
+                                <th>rate</th>
+                                <th>quantity</th>
+                                <th>discount</th>
+                                <th>amount</th>
+                                <th>action</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <select name="itemSelectBox" id="itemSelectBox">
+                                        <option value="" disabled selected>select your item</option>
+                                    </select>
+                                </td>
+                                <td>1</td>
+                                <td><input type="number" name="itemRate" id="itemRate" placeholder="item rate" value=""></td>
+                                <td><input type="number" name="itemQty" id="itemQty" placeholder="item qty" value=""></td>
+                                <td><input type="number" name="itemDiscount" id="itemDiscount" placeholder="item discount" value=""></td>
+                                <td>100</td>
+                                <td>
+                                    <button id="itemDeleteBtn" class="item__delete--btn"><i class="fa-solid fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </main>
     </div>
     <!-- font-awesome js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- jquery file -->
-    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
     <!-- external js -->
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
