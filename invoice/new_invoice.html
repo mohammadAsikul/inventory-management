@@ -180,9 +180,8 @@
                         </div>
                     </div>
                     <div class="invoice__item__information">
-                        <table class="invoice__table">
+                        <table id="invoiceItemTable" class="invoice__table">
                             <tr>
-                                <th>sr no.</th>
                                 <th>item name</th>
                                 <th>stock</th>
                                 <th>rate</th>
@@ -192,7 +191,6 @@
                                 <th>action</th>
                             </tr>
                             <tr>
-                                <td>1</td>
                                 <td>
                                     <select name="itemSelectBox" id="itemSelectBox">
                                         <option value="" disabled selected>select your item</option>
@@ -208,6 +206,8 @@
                                 </td>
                             </tr>
                         </table>
+                        <!-- add new row for invoice item -->
+                        <button id="addNewRow"><i class="fa-solid fa-circle-plus"></i>Add Line</button>
                     </div>
                 </form>
             </div>
@@ -217,6 +217,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- jquery file -->
     <script src="../js/jquery-3.6.0.min.js"></script>
+    <!-- external jQuery Script -->
+    <!-- <script src="../js/jQuery_script.js"></script> -->
     <!-- external js -->
     <script src="../js/script.js"></script>
 </body>
