@@ -24,7 +24,7 @@
                 <h3>Marvel Computer & Service Center</h3>
             </div>
             <ul class="nav__list">
-                <a href="">
+                <a href="../index.html">
                     <li class="nav__list--items">
                         <i class="fa-solid fa-gauge icons"></i>
                         <div class="nav__list--item--text--container">
@@ -181,30 +181,36 @@
                     </div>
                     <div class="invoice__item__information">
                         <table id="invoiceItemTable" class="invoice__table">
-                            <tr>
-                                <th>item name</th>
-                                <th>stock</th>
-                                <th>rate</th>
-                                <th>quantity</th>
-                                <th>discount</th>
-                                <th>amount</th>
-                                <th>action</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <select name="itemSelectBox" id="itemSelectBox">
-                                        <option value="" disabled selected>select your item</option>
-                                    </select>
-                                </td>
-                                <td>1</td>
-                                <td><input type="number" name="itemRate" id="itemRate" placeholder="item rate" value=""></td>
-                                <td><input type="number" name="itemQty" id="itemQty" placeholder="item qty" value=""></td>
-                                <td><input type="number" name="itemDiscount" id="itemDiscount" placeholder="item discount" value=""></td>
-                                <td>100</td>
-                                <td>
-                                    <button id="itemDeleteBtn" class="item__delete--btn"><i class="fa-solid fa-trash"></i></button>
-                                </td>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>sl no.</th>
+                                    <th>item name</th>
+                                    <th>stock</th>
+                                    <th>rate</th>
+                                    <th>quantity</th>
+                                    <th>discount</th>
+                                    <th>amount</th>
+                                    <th>action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="newInvoiceTbody">
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <select name="itemSelectBox" id="itemSelectBox">
+                                            <option value="" disabled selected>select your item</option>
+                                        </select>
+                                    </td>
+                                    <td>1</td>
+                                    <td><input type="number" name="itemRate" id="itemRate" placeholder="item rate" value=""></td>
+                                    <td><input type="number" name="itemQty" id="itemQty" placeholder="item qty" value=""></td>
+                                    <td><input type="number" name="itemDiscount" id="itemDiscount" placeholder="item discount" value=""></td>
+                                    <td>100</td>
+                                    <td>
+                                        <button id="itemDeleteBtn" class="itemDeleteBtn"><i class="fa-solid fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
                         <!-- add new row for invoice item -->
                         <button id="addNewRow"><i class="fa-solid fa-circle-plus"></i>Add Line</button>
